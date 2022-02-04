@@ -1,28 +1,37 @@
 new Vue({
 	el: '#desafio',
 	data: {
-		classeCSS: 'destaque',
-		pink: true,
+		classe1: 'destaque',
+		perigo: true,
 		classe3: '',
-		classe4 = ' '
+		classe4: '',
+		cor5: '',
+		estilo5: {
+			width: '100px',
+			height: '100px',
+		},
+		width: '0',
 	},
 	methods: {
 		iniciarEfeito() {
 			setInterval(() => {
-				this.classeCSS = this.classeCSS == 'destaque' 
+				this.classe1 = this.classe1 == 'destaque' 
 				? 'encolher' : 'destaque'
-			}, 1000);
+			}, 2000);
 		},
 		iniciarProgresso() {
-			setInterval(() => {
-				
-			}, 5000);
+			let valor = 0
+			const temporizador = setInterval(() => {
+				valor += 5
+				this.width = `${valor}%`
+				if(valor == 100) clearInterval(temporizador)
+			}, 500);
 		},
-		setPink(event) {
+		setPerigo(event) {
 			if(event.target.value == "true") {
-				this.pink = true
+				this.perigo = true
 			} else if(event.target.value == "false") {
-				this.pink = false
+				this.perigo = false
 			}
 		}
 	}

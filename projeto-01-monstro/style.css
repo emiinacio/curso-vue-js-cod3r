@@ -1,7 +1,9 @@
 /* Geral */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 #app {
@@ -31,13 +33,13 @@ html {
 
 .score h1 {
     font-weight: 300;
-    font-size: 1.6rem;
+    font-weight: 1.6rem;
 }
 
 .life-bar {
     width: 80%;
     height: 20px;
-    border: 1px solid #AAA;
+    border: 1px solid #aaa;
 }
 
 .life-bar .life {
@@ -52,7 +54,6 @@ html {
 }
 
 /* Área do Resultado */
-
 .result {
     display: flex;
     justify-content: center;
@@ -68,7 +69,7 @@ html {
     color: red;
 }
 
-/* Área dos Botões (Controle do Jogo) */
+/* Área dos botões (controle do jogo) */
 
 .buttons {
     display: flex;
@@ -77,10 +78,11 @@ html {
 
 .btn {
     padding: 5px 10px;
-    margin: 0px 10px;
+    margin: 0 10px;
     border-radius: 5px;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1.1.rem;
+    border: none;
 }
 
 .new-game {
@@ -95,20 +97,20 @@ html {
 
 .especial-attack {
     background-color: #ff9800;
-    color: #000;
+    color: 000;
 }
 
 .heal {
     background-color: #259b24;
-    color: #FFF;
+    color: #fff;
 }
 
 .give-up {
-    background-color: #BBB;
+    background-color: #bbb;
     color: #000;
 }
 
-/* Área dos Logs */
+/*  Àrea dos Logs*/
 
 .logs ul {
     display: flex;
@@ -124,7 +126,7 @@ html {
     margin: 4px 0px;
     padding: 3px 0px;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.1rrem;
     text-transform: uppercase;
     border-radius: 3px;
 }
